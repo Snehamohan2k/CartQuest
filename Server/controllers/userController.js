@@ -18,7 +18,7 @@ const UserController = {
     },
 
     // Controller function for handling user login
-    async login(req, res) {
+    async userLogin(req, res) {
         try {
             // Extract user email and password from the request body
             const { userEmail, password } = req.body;
