@@ -6,14 +6,16 @@ import { Link } from "react-router-dom";
 const LoginPage = () => {
     return (
      <div className="login-page">
-        <div className="wrapper">
+        <div className="login-wrapper">
             <form action="">
                 <h1>Begin your Quests!</h1>
                 <div className="input-box">
+                <div className='user-details'>Email ID</div>
                     <input type="text" placeholder="UserEmail" required></input>
                     <FaUser className="icon" />
                 </div>
                 <div className="input-box">
+                <div className='user-details'>Password</div>
                     <input type="password" placeholder="Password" required></input>
                     <FaLock className="icon" />
                 </div>
