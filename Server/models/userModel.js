@@ -8,7 +8,7 @@ const UserModel = {
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Insert the user information into the 'user_info' table and retrieve the 'user_name'
-        const result = await pool.query('INSERT INTO user_info (user_info, user_name, password, phone_number) VALUES ($1, $2, $3, $4) RETURNING user_name', [userEmail, userName, hashedPassword, phoneNumber]);
+        const result = await pool.query('INSERT INTO user_info (user_email, user_name, password, phone_number) VALUES ($1, $2, $3, $4) RETURNING user_name', [userEmail, userName, hashedPassword, phoneNumber]);
 
         // Return the 'user_name' of the newly created user
         return result.rows[0].user_name;
