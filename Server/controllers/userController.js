@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const UserModel = require('../models/userModel');
+const bcrypt = require('bcrypt');
 
 const UserController = {
     // Controller function for handling new user registration
@@ -38,7 +39,7 @@ const UserController = {
             }
 
             // Sign a JWT token with the user email and a secret key
-            const token = jwt.sign({ userEmail: user.user_email }, process.env.JWT_SECRET, { expiresIn: '2h' });
+            const token = jwt.sign({ userEmail: user.user_email }, "cartQuest", { expiresIn: '2h' });
 
             // Respond with a success message and the JWT token
             res.json({ message: 'Login Successful', token });
