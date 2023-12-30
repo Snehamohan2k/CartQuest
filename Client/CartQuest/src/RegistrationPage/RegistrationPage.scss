@@ -1,0 +1,116 @@
+.registration-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, peachpuff, rgb(206, 125, 233));
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.registration-wrapper {
+    background-image: linear-gradient(135deg, rgb(226, 214, 232), rgb(238, 210, 185));
+    width: 580px;
+    // height: 700px;
+    box-shadow: rgb(86, 80, 80) 0px 0px 15px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    .user-details {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+
+    .input-box {
+        width: 100%;
+        // height: 100%;
+        position: relative;
+        margin: 15px 0;
+
+        input {
+            width: 100%;
+            // height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgb(39, 34, 34);
+            border-radius: 40px;
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 20px 45px 20px 20px;
+
+            &::placeholder {
+                color: black;
+                opacity: 0.5;
+
+            }
+        }
+
+        .icon {
+            position: absolute;
+            top: 65%;
+            transform: translateY(-50%);
+            right: 20px;
+            color: black;
+            font-size: 25px;
+        }
+
+    }
+
+    .register-button {
+        width: 100%;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: 700;
+        margin-top: 15px;
+
+        &:hover {
+            background-image: linear-gradient(135deg, rgb(217, 164, 240), rgb(204, 138, 228));
+        }
+    }
+
+    .form-error {
+        color: red;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .login-page {
+        font-size: 21px;
+        text-align: center;
+        margin: 30px 0 15px;
+        color: #484385;
+        margin-top: 20px !important;
+        min-height: 0 !important;
+        background-image: none !important;
+        p .login-link {
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
